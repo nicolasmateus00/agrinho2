@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meio Ambiente Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🌎 Meio Ambiente Sustentável</h1>
+    <p>Cuidar da natureza é garantir o futuro.</p>
+</header>
+
+<nav>
+    <button onclick="mostrarInfo('reciclagem')">♻️ Reciclagem</button>
+    <button onclick="mostrarInfo('agua')">💧 Água</button>
+    <button onclick="mostrarInfo('florestas')">🌳 Florestas</button>
+    <button onclick="mostrarInfo('energia')">⚡ Energia</button>
+</nav>
+
+<section class="acessibilidade">
+    <button onclick="aumentarFonte()">A+</button>
+    <button onclick="diminuirFonte()">A-</button>
+    <button onclick="modoEscuro()">🌙 Modo Escuro</button>
+</section>
+
+<main>
+
+<div class="card">
+    <h2>Bem-vindo!</h2>
+    <p>
+        O meio ambiente é essencial para a vida no planeta.
+        Aqui você encontrará informações importantes sobre
+        sustentabilidade e preservação ambiental.
+    </p>
+</div>
+
+<div id="informacoes" class="card">
+    <h2>Selecione um tema acima</h2>
+    <p>As informações aparecerão aqui.</p>
+</div>
+
+<div class="card">
+    <h2>🌱 Dicas Sustentáveis</h2>
+
+    <button onclick="mostrarDica()">Mostrar Dica</button>
+
+    <p id="dica"></p>
+</div>
+
+</main>
+
+<footer>
+    <p>🌍 Projeto Educação Ambiental 2025</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
