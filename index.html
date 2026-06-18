@@ -13,47 +13,45 @@
     <p>Cuidar da natureza é garantir o futuro.</p>
 </header>
 
-<nav>
-    <button onclick="mostrarInfo('reciclagem')">♻️ Reciclagem</button>
-    <button onclick="mostrarInfo('agua')">💧 Água</button>
-    <button onclick="mostrarInfo('florestas')">🌳 Florestas</button>
-    <button onclick="mostrarInfo('energia')">⚡ Energia</button>
+<aside class="acessibilidade" aria-label="Controles de acessibilidade">
+    <button onclick="aumentarFonte()" aria-label="Aumentar tamanho do texto">A+</button>
+    <button onclick="diminuirFonte()" aria-label="Diminuir tamanho do texto">A-</button>
+    <button onclick="modoEscuro()" aria-label="Alternar modo escuro">🌙 Modo Escuro</button>
+</aside>
+
+<nav aria-label="Navegação principal">
+    <ul>
+        <li><button onclick="mostrarInfo('reciclagem')">♻️ Reciclagem</button></li>
+        <li><button onclick="mostrarInfo('agua')">💧 Água</button></li>
+        <li><button onclick="mostrarInfo('florestas')">🌳 Florestas</button></li>
+        <li><button onclick="mostrarInfo('energia')">⚡ Energia</button></li>
+    </ul>
 </nav>
 
-<section class="acessibilidade">
-    <button onclick="aumentarFonte()">A+</button>
-    <button onclick="diminuirFonte()">A-</button>
-    <button onclick="modoEscuro()">🌙 Modo Escuro</button>
-</section>
-
 <main>
+    <article class="card">
+        <h2>Bem-vindo!</h2>
+        <p>
+            O meio ambiente é essencial para a vida no planeta.
+            Aqui você encontrará informações importantes sobre
+            sustentabilidade e preservação ambiental.
+        </p>
+    </article>
 
-<div class="card">
-    <h2>Bem-vindo!</h2>
-    <p>
-        O meio ambiente é essencial para a vida no planeta.
-        Aqui você encontrará informações importantes sobre
-        sustentabilidade e preservação ambiental.
-    </p>
-</div>
+    <article id="informacoes" class="card" aria-live="polite">
+        <h2>Selecione um tema acima</h2>
+        <p>As informações completas aparecerão aqui.</p>
+    </article>
 
-<div id="informacoes" class="card">
-    <h2>Selecione um tema acima</h2>
-    <p>As informações aparecerão aqui.</p>
-</div>
-
-<div class="card">
-    <h2>🌱 Dicas Sustentáveis</h2>
-
-    <button onclick="mostrarDica()">Mostrar Dica</button>
-
-    <p id="dica"></p>
-</div>
-
+    <article class="card">
+        <h2>🌱 Dicas Sustentáveis</h2>
+        <button onclick="mostrarDica()">Mostrar Dica</button>
+        <p id="dica" aria-live="polite"></p>
+    </article>
 </main>
 
 <footer>
-    <p>🌍 Projeto Educação Ambiental 2025</p>
+    <p>🌍 Projeto Educação Ambiental &copy; 2026</p>
 </footer>
 
 <script src="script.js"></script>
